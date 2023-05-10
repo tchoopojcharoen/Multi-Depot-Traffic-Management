@@ -1,19 +1,19 @@
 How to Use
 ========
 
-  1.  Jump to where your file located :
+  1.  Change the current directory to the scripts folder:
 
    .. code-block:: sh
 
       cd  your_ws/src/matc/matc_pkg/scripts
    
-  2.  Run main.py
+  2.  Run "main.py"
    .. code-block:: sh
 
       python3 main.py
    
    
-  3.  If correct it should be displayed like the image below (This is called 'main window'). Then press the 'Create File' button to go to the next step. 
+  3.  It should display something similar to the image below (This is called the 'main window'). Then press the 'Create File' button to go to the next step. 
 
 
     .. image:: tutorial_pic/home.jpg
@@ -22,7 +22,7 @@ How to Use
       :alt: Alternative text
       :align: center
    
-  4.  Step1 is step that's user must import image of map file such as png, jpg, bmp, etc. by click on 'Import map' button (The image will be converted from its          original size to 800x800 pixels)
+  4.  Step1: users must import an image of map file such as png, jpg, bmp, etc. by clicking on 'Import map' button (The image will be converted from its original size to 800x800 pixels)
 
       .. image:: tutorial_pic/step1.jpg
         :width: 500
@@ -30,7 +30,7 @@ How to Use
         :alt: Alternative text
         :align: center
 
-      When the button is pressed, it displays the following window. Users can select file from where it located then click 'Open' or double click on file.
+      When the button is pressed, it displays the following window. Users can select file from where it located then click 'Open' or double click on the file.
 
       .. image:: tutorial_pic/step1-select-map.jpg
         :width: 380
@@ -50,18 +50,16 @@ How to Use
   
 
   
-   5. Step2 is step that's user must draw nodes on an imported map. 
+   5. Step2: Users must draw nodes on an imported map. 
 
       There are 3 types of node :
 
-        - Depot point :  The location of the starting point or charging station for the robot.    (Red color)  
-        - Customer point  :   The location of the picked up or delivered point which have demand.   (Green Color) 
-        - Connetor point  :  It is used as an access point to evade obstacles and determine various positions.  (Turquoise color)
+        - Depot point :  The location of the starting point or charging station for a robot.    (Red color)  
+        - Customer point  :   The location of the pick-up or delivery point which has demands.   (Green Color) 
+        - Connector point  :  It is used as an access point to evade obstacles and determine various positions.  (Cyan color)
         
-      To place the nodes can be done after selecting the type of node and left-click on the window of the imported image (This is called 'drawing window'),this can be un-pasted last time by right-click. User can also determine the radial size of the nodes. (This depends on the user's needs and it has no effect on the calculations)
+      Placing the nodes can be done after selecting the type of nodes and left-click on the window of the imported image (This is refered as  'drawing window'), this can be undo by right-click. Users can also determine the radial size of the nodes. (This depends on the user's needs and it has no effect on the calculations)
       
-
-
       .. image:: tutorial_pic/step2-select-node-type.jpg
         :width: 500
         :height: 350
@@ -69,7 +67,6 @@ How to Use
         :align: center
     
       
-
       The requirements for placing nodes are as follows :
         - All Depot nodes must be placed before other types of nodes.
         - The placed nodes must not overlap the obstacles on map.
@@ -94,7 +91,7 @@ How to Use
 
       
       
-   6. After the nodes are placed on the map, User must press the Enter key to proceed to the next section of this part is "Edge Connection" (the connection path        between the nodes). Edge connections can be made by left-click on nodes between two nodes to create paths between them and can be undo by right-click on drawing window.
+   6. After the nodes are placed on the map, users must press the "Enter" key to proceed to the next section of this part is "Edge Connection" (the connection path between the nodes). Edge connections can be made by left-click on nodes between two nodes to create paths between them and can be undo by right-click on drawing window.
    
        The requirements for connection edges are as follows :
         - Each Depot node can have only one edge.
@@ -109,14 +106,14 @@ How to Use
           :alt: Alternative text
           :align: center
     
-      After all the edges are created, User must click on 'OK' button in the main window to proceed to next step.
+      After all the edges are created, users must click on 'OK' button in the main window to proceed to next step.
       
       
-  7.  Step3, In the main window will show data that created from Step2 which are amount of total depot and total customer. In this step, user have to input the data about the user's desired environment by click on 'Input Data' button to open input-window. 
+  7.  Step3: The main window will show data that created from Step2 which consists of amount of total depots and total customers. In this step, users have to input the data about the user's desired environment by clicking on 'Input Data' button to open an "input-window". 
       
       There are 4 part of input data :
 
-        - Maximum vehicle for each depot (Amount of maximum vehicle for each depot are equaled)
+        - Maximum number of vehicle for each depot (Amount of maximum vehicle for each depot are equaled)
         - Maximum load of vehicle (All vehicle load are equaled)
         - Route duration (Default is 0)
         - Demand (Demand for each customer point)
