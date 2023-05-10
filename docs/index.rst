@@ -7,9 +7,10 @@ In recent years, the adoption of autonomous mobile robot fleets has seen a signi
 
 Credit
 ************
-* This project is to connect between User, Fleet and Traffic Management of Autonomous Mobile Robot. 
-* In part of Fleet management, This project have adapted from Kimbim's MDVRP (source : https://github.com/kimbim/MDVRP)
-* In part of Visualization, This project use Multi-Turtlesim_
+* The objective of this project is to establish seamless connectivity and coordination among users, fleet management, and traffic management for autonomous mobile robots.
+* For fleet management, this project incorporates and builds upon Kimbim's MDVRP framework (source: https://github.com/kimbim/MDVRP) to ensure efficient management of the robot fleet.
+* The visualization aspect of this project utilizes the Multi-Turtlesim library (source: https://github.com/tchoopojcharoen/multi_turtlesim) to provide a comprehensive visual representation.
+* The interface designed for fleet and traffic management in a multi-depot scenario is fully compatible with ROS2. (Please note that usage outside of the ROS2 framework may result in limited functionality, particularly regarding the visualization aspect with the Traffic Service Server Node.)
 
 
 .. toctree::
